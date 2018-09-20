@@ -1,7 +1,7 @@
 # Contacto.com
 
-The responsive, quick website made using the basics of Angular JS.
-It is designed to show information of users on a website. It is a basic practice, for now.
+The responsive, quick Web App was made using the basics of Angular JS.
+It is designed to show information of users on a website. 
 
 ![Demo](https://user-images.githubusercontent.com/26602639/45809766-a87c0480-bce6-11e8-8226-cc136497dc81.gif)
 
