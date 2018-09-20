@@ -1,4 +1,8 @@
-# Ng6
+# Contacto.com
+
+The responsive, quick website made using the basics of Angular JS.
+It is designed to show information of users on a website. It is a basic practice, for now.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
