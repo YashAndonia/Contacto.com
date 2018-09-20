@@ -3,6 +3,7 @@
 The responsive, quick website made using the basics of Angular JS.
 It is designed to show information of users on a website. It is a basic practice, for now.
 
+![Demo](https://user-images.githubusercontent.com/26602639/45809766-a87c0480-bce6-11e8-8226-cc136497dc81.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3.
 
