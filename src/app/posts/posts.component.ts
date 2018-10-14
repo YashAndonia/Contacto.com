@@ -8,16 +8,16 @@ import { Observable } from 'rxjs';
   styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
-  public counter = 4;	
+  public  counter = 4;	
   items: Observable<any[]>;	
-  msg : AngularFireList<Messages[]>;
+ // msg : AngularFireList<Messages[]>;
   constructor(db: AngularFireDatabase) { 
   	this.items = db.list('/Messages').valueChanges();
-  	this.msg = db.list('/Messages');
+  //	this.msg = db.list('/Messages');
   }
 public addMessage(mesg: string): void{
 	this.counter ++ ;
-    this.msg.push({ post:mesg });
+    //this.msg.push({ post:mesg });
 }
   ngOnInit() {
   }
