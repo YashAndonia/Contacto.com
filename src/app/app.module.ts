@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule , AngularFireDatabase} from '@angular/fire/database';
+import { environment } from './../environments/environment';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -20,9 +24,11 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
-  providers: [],
+  providers: [AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

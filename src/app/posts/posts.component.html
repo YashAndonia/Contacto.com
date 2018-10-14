@@ -1,4 +1,15 @@
-<p>
-  Contact us at 1203110292390
-  Or <br>Send an email at 122zcxasd@sadas.com
-</p>
+<form>
+<div class="form-group">
+    <label for="post" style="font-family:Montserrat">Message</label>
+    <textarea class="form-control" id="post" rows="3" #mesg></textarea>
+  </div>
+  <button type="submit" class="btn btn-dark"  style="font-family:Montserrat" (click)="addMessage(mesg.value)">Send to yours Contacts</button>
+</form>
+<p>{{ counter }}</p>
+  <ul>
+  <li class="text" *ngFor="let item of items | async">
+   <div class="card card-body" style="height: auto"> 
+   	<!-- {{item.post}} -->
+   	{{ item | json}}
+  </div></li>
+</ul>
